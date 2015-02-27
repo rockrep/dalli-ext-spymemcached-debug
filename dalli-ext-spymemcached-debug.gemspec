@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
     'http://rubygems.org/gems/dalli-ext-spymemcached/versions/1.0.2'
   s.license       = 'MIT'
 
-  s.add_development_dependency 'rake', '>= 0'
-  s.add_development_dependency 'rspec', '>= 0'
-  s.add_development_dependency 'simplecov', '>= 0'
-  s.add_runtime_dependency 'dalli', '>= 0'
+  s.add_development_dependency 'rake', '~> 0'
+  s.add_development_dependency 'rspec', '~> 0'
+  s.add_development_dependency 'simplecov', '~> 0'
+  s.add_runtime_dependency 'dalli', '~> 0'
 end
