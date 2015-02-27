@@ -23,7 +23,10 @@ module Dalli
 
         def server_for_key(key)
           server = @servers[hash_for(key) % @servers.length] if @servers.any?
-          puts "Dalli::Ext::Spymemcached#server_for_key: key: #{key}, server: #{server.try(:name)}"
+          Dalli.logger.debug { "Dalli::Ext::Spymemcached#server_for_key:
+            key: #{key.to_s},
+            hash: #{hash_for(key)},
+            server: #{server.try(:name)}" }
 
           unless server && server.alive?
             raise Dalli::NetworkError, "No servers available"

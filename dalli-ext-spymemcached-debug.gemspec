@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'dalli-ext-spymemcached-debug'
-  s.version     = '1.0.3'
+  s.version     = '1.0.4'
   s.date        = '2010-04-28'
   s.summary     = "Dalli server-hashing algorithm to match spymemcachedJava library."
   s.description = "Copy of dalli-ext-spymemcached, with gemspec and debug output added so I can watch the behavior"
