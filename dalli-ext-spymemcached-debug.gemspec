@@ -6,9 +6,13 @@ Gem::Specification.new do |s|
   s.description = "Copy of dalli-ext-spymemcached, with gemspec and debug output added so I can watch the behavior"
   s.authors     = ["Jim Myhrberg, Mat Sadler, Tim Blair"]
   s.email       = ''
-  s.files       = ["lib/dalli-ext-spymemcached.rb"]
+  s.files = Dir.glob("lib/**/*") + [
+     "README.md",
+     "Gemfile",
+     "dalli-ext-spymemcached-debug.gemspec",
+  ]
   s.homepage    =
-    'http://rubygems.org/gems/dalli-ext-spymemcached/versions/1.0.2'
+    'http://rubygems.org/gems/dalli-ext-spymemcached-debug/versions/1.0.4'
   s.license       = 'MIT'
 
   s.add_development_dependency 'rake', '~> 0'
